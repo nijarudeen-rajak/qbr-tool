@@ -115,7 +115,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <div style="width: 14rem;" [ngClass]="{'sub-header-selected':subheader2}">
+        <div *ngIf="hasKeycloakAdminPermission" style="width: 14rem;" [ngClass]="{'sub-header-selected':subheader2}">
 
           <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 sub-heading" style="justify-content: space-between;
                 display: flex;">
@@ -189,7 +189,7 @@
   </li>
   <li class="nav-item">
     <div (click)="expandSideNavBar()">
-  <li class="nav-item" routerLink="/connections" routerLinkActive="active"
+  <li *ngIf="hasKeycloakAdminPermission" class="nav-item" routerLink="/connections" routerLinkActive="active"
     [ngClass]="{'sub-header-selected':subheader2}">
     <a data-bs-toggle="collapse" class="nav-link px-0 sub-heading" style="justify-content: space-between;
                 display: flex;">

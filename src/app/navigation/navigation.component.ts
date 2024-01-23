@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
+import { KeycloakService } from 'keycloak-angular';
 import { filter } from 'rxjs';
 import { environment } from 'src/environment/environment';
 
@@ -21,9 +22,12 @@ export class NavigationComponent {
   subheader3 = false;
   @Output() expandSideBar = new EventEmitter<any>();
   selectedNavItem: string = '';
+  hasKeycloakAdminPermission: boolean;
 
 
-  constructor(private router: Router, private sanitizer: DomSanitizer) {
+
+  constructor(private keycloakService: KeycloakService, private router: Router, private sanitizer: DomSanitizer) {
+    this.hasKeycloakAdminPermission = this.keycloakService.isUserInRole('admin');
   }
   
   iframeAirbyteConnectionURL = this.sanitizer.bypassSecurityTrustResourceUrl(environment.airbyte_Connection_URL);
