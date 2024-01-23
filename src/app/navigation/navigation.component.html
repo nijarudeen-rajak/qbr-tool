@@ -43,7 +43,20 @@
                 analytics
                 dashboard</a>
             </li>
-
+            <li class="w-100 sub-heading" routerLink="/qa-summary-dashboard" routerLinkActive="active"
+              style="padding-left: 0.6rem; margin-bottom: 3px; &:hover { background-color: none;}"
+              [ngClass]="check('/qa-summary-dashboard')">
+              <a routerLink="/qa-summary-dashboard" routerLinkActive="active" class="nav-link px-0">
+                QA Summary Dashboard
+              </a>
+            </li>
+            <li class="w-100 sub-heading" routerLink="/engineering-productivity" routerLinkActive="active"
+              style="padding-left: 0.6rem; margin-bottom: 3px; &:hover { background-color: none;}"
+              [ngClass]="check('/engineering-productivity')">
+              <a routerLink="/engineering-productivity" routerLinkActive="active" class="nav-link px-0">
+                Engineering Productivity
+              </a>
+            </li>
           </ul>
         </div>
       </li>
@@ -95,7 +108,7 @@
           <ul (click)="changeMainNavColor('submenu3')" class="collapse hide nav" id="submenu3" data-bs-parent="#menu">
             <li class="w-100 sub-heading" routerLink="/kibana-overview" routerLinkActive="active"
               style="padding-left: 0.6rem; margin-bottom: 3px;" [ngClass]="check('/kibana-overview')">
-              <a [href]="iframeKibanaURl" 
+              <a [href]="iframeKibanaURl"
                 target="_blank" class="nav-link px-0">kibana-overview</a>
             </li>
           </ul>
@@ -115,7 +128,7 @@
           <ul (click)="changeMainNavColor('submenu2')" class="collapse hide nav" id="submenu2" data-bs-parent="#menu">
 
             <li class="w-100 sub-heading" routerLink="/metabase-configuration" routerLinkActive="active"
-              style="padding-left: 0.6rem; margin-bottom: 3px;" [ngClass]="check('/metabase-configuration')"> 
+              style="padding-left: 0.6rem; margin-bottom: 3px;" [ngClass]="check('/metabase-configuration')">
               <a [href]="iframeMetabaseConfigurationURL" target="_blank"
                 class="nav-link px-0">Configuration</a>
             </li>
