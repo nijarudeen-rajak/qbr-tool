@@ -17,6 +17,8 @@ import { KibanaComponent } from './admin-main-menu/kibana/kibana.component';
 import { MetabaseConfigurationComponent } from './admin-main-menu/metabase-configuration/metabase-configuration.component';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { initializer } from './utils/app-init';
+import { QaSummaryDashboardComponent } from './admin-main-menu/qa-summary-dashboard/qa-summary-dashboard.component';
+import { EngineeringProductivityComponent } from './admin-main-menu/engineering-productivity/engineering-productivity.component';
 
 const keycloakService = new KeycloakService();
 @NgModule({
@@ -30,6 +32,8 @@ const keycloakService = new KeycloakService();
     AirbyteConnectionsComponent,
     KibanaComponent,
     MetabaseConfigurationComponent,
+    QaSummaryDashboardComponent,
+    EngineeringProductivityComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,16 +43,16 @@ const keycloakService = new KeycloakService();
     HttpClientModule,
     NgxSpinnerModule,
     BrowserAnimationsModule,
-    KeycloakAngularModule
+    KeycloakAngularModule,
   ],
   providers: [
     {
-      provide: APP_INITIALIZER, 
-      useFactory: initializer, 
-      deps: [ KeycloakService ], 
-      multi: true
+      provide: APP_INITIALIZER,
+      useFactory: initializer,
+      deps: [KeycloakService],
+      multi: true,
     },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
