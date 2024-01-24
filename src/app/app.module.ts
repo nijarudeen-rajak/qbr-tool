@@ -17,8 +17,10 @@ import { KibanaComponent } from './admin-main-menu/kibana/kibana.component';
 import { MetabaseConfigurationComponent } from './admin-main-menu/metabase-configuration/metabase-configuration.component';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { initializer } from './utils/app-init';
-import { QaSummaryDashboardComponent } from './admin-main-menu/qa-summary-dashboard/qa-summary-dashboard.component';
-import { EngineeringProductivityComponent } from './admin-main-menu/engineering-productivity/engineering-productivity.component';
+import { CodeQualitySummaryComponent } from './admin-main-menu/code-quality-summary/code-quality-summary.component';
+import { SecurityAndComplianceComponent } from './admin-main-menu/security-and-compliance/security-and-compliance.component';
+import { EngineeringProductivityResourceComponent } from './admin-main-menu/engineering-productivity-resource/engineering-productivity-resource.component';
+import { EngineeringProductivitySummaryComponent } from './admin-main-menu/engineering-productivity-summary/engineering-productivity-summary.component';
 
 const keycloakService = new KeycloakService();
 @NgModule({
@@ -32,8 +34,10 @@ const keycloakService = new KeycloakService();
     AirbyteConnectionsComponent,
     KibanaComponent,
     MetabaseConfigurationComponent,
-    QaSummaryDashboardComponent,
-    EngineeringProductivityComponent,
+    CodeQualitySummaryComponent,
+    SecurityAndComplianceComponent,
+    EngineeringProductivityResourceComponent,
+    EngineeringProductivitySummaryComponent,
   ],
   imports: [
     BrowserModule,
