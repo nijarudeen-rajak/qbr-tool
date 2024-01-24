@@ -14,7 +14,6 @@ export function initializer(keycloak: KeycloakService): () => Promise<any> {
     });
 }
 
- 
 // export function initializer(keycloak: KeycloakService): () => Promise<any> {
 //     return () =>
 //       keycloak.init({
