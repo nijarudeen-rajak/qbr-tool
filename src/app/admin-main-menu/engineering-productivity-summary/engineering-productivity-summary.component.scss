@@ -1,0 +1,249 @@
+
+    .work-status-container {
+        margin-top: 20px;
+        display: flex;
+        .workload-card {
+            width: 330px;
+            height: 310px;
+            margin-left: 30px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 10px;
+            padding: 10px 22px;
+            .top-header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .title > p {
+                margin-bottom: 0px;
+                font-weight: 500;
+                font-size: 18px;
+            }
+            .progress-bar-box {
+                display: flex;
+                margin-top: 10px;
+                justify-content: space-around;
+                .person-progress-bar {
+                    width: 50px;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .progress-bar-container {
+                        position: relative;
+                        width: 8px;
+                        height: 200px;
+                        background-color:  #dee2e6;
+                        border-radius: 8px;
+                    }
+                    .progress-bar {
+                        width: 8px;
+                        height: 200px;
+                        background-color: #8cec6b;
+                        border-radius: 8px;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                    .person-img {
+                        width: 35px;
+                        height: 35px;
+                        background-color: rgb(153, 156, 156);
+                        border-radius: 50%;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .progress-bar-status {
+                margin-top: 50px;
+                transform: rotateZ(270deg);
+                justify-content: space-evenly;
+                background-color: azure;
+                .progress-status {
+                    display: flex;
+                    align-items: center;
+                    // margin-bottom: 30px;
+                    .person-img {
+                        width: 35px;
+                        height: 35px;
+                        background-color: rgb(153, 156, 156);
+                        border-radius: 50%;
+                        margin-right: 20px;
+                    }
+                    .progress {
+                        width: 50%;
+                        height: 8px;
+                    }
+                }
+            }
+        .status-count {
+            .progress-bar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background:
+                  radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                  conic-gradient(rgb(155, 245, 178) 75%, pink 0);
+              }
+
+              .progress-bar::before {
+                content: "75%";
+                font-size: 14px;
+              }
+        }
+
+        }
+        .individual-task-card {
+            width: 330px;
+            height: 310px;
+            padding: 20px 30px;
+            margin-left: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 10px;
+            .header-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .header-unassigned {
+                    margin-bottom: 0;
+                }
+                .user-profile-box {
+                    display: flex;
+                    align-items: center;
+                    .user-name {
+                        margin-bottom: 0;
+                        margin-left: 10px;
+                    }
+                    .user-image {
+                        width: 40px;
+                        background: green;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .status-count {
+                display: flex;
+                justify-content: space-between;
+                margin-top:10px;
+                align-items: center;
+                .status-box {
+                    .count-status {
+                        margin-bottom: 0;
+                        margin-top: 5px;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    .text-status {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: grey;
+                        margin-bottom: 0;
+                    }
+                }
+                .circular-progress-bar {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #8cec6b;
+                    border-radius: 50%;
+                }
+                // svg {
+                //     position: relative;
+                //     width: 100px;
+                //     height: 100px;
+                //     z-index: 100;
+                // }
+                // svg circle {
+                //     width: 100%;
+                //     height: 100%;
+                //     fill: none;
+                //     stroke: #191919;
+                //     stroke-width: 10;
+                //     stroke-linecap: 10;
+                //     transform: translate(5px, 5px);
+                //     stroke-dasharray: 220;
+                //     stroke-dashoffset: 220;
+                // }
+                .circular-progress-bar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                    background:
+                      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                      conic-gradient(#8cec6b 75%, #d1d1d1 0);
+                  }
+
+                  .circular-progress-bar::before {
+                    content: "75%";
+                    font-size: 14px;
+                  }
+            }
+            .horizontal-progress-bar {
+                position: relative;
+                margin-top: 10px;
+                .todo-bar-status {
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-color: #d3d3d3;
+                    border-radius: 8px;
+                }
+                .complete-bar-status {
+                    position: absolute;
+                    right: 0;
+                    height: 4px;
+                    background-color: #8cec6b;
+                    border-radius: 8px;
+                }
+                .inprogress-bar-status {
+                    position: absolute;
+                    right: 0;
+                    height: 4px;
+                    background-color: #ce8af5;
+                    border-radius: 8px;
+                }
+            }
+            .task-status {
+                margin-top: 50px;
+                .task-status-row {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    .status-color-todo {
+                        width: 15px;
+                        height: 15px;
+                        background-color: #d1d1d1;
+                        border-radius: 2px;
+                        margin-left: 3px;
+                    }
+                    .status-color-complete {
+                        width: 15px;
+                        height: 15px;
+                        background-color: #8cec6b;
+                        border-radius: 2px;
+                        margin-left: 3px;
+                    }
+                    .status-color-inprogress {
+                        width: 15px;
+                        height: 15px;
+                        background-color: #ce8af5;
+                        border-radius: 2px;
+                        margin-left: 3px;
+                    }
+                    .text-status-count {
+                        margin-bottom: 0;
+                        font-weight: 500;
+                        margin-left: 5px;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+          }
+    }
