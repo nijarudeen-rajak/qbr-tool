@@ -1,3 +1,200 @@
 <div>
-    <img class="engineering-productivity-summary" src="../../../assets/EP.png"/>
+  <!-- <img class="engineering-productivity-summary" src="../../../assets/EP.png" /> -->
+  <div class="work-status-container">
+    <ng-container>
+      <div class="workload-card">
+        <div class="top-header">
+          <div class="title">
+            <p>Workload</p>
+          </div>
+        </div>
+        <!-- <div class="progress-bar-status"> -->
+        <div class="progress-bar-box">
+          <div class="person-progress-bar">
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="height: 10%"></div>
+            </div>
+            <div class="person-img"></div>
+          </div>
+          <div class="person-progress-bar">
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="height: 30%"></div>
+            </div>
+            <div class="person-img"></div>
+          </div>
+          <div class="person-progress-bar">
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="height: 50%"></div>
+            </div>
+            <div class="person-img"></div>
+          </div>
+          <div class="person-progress-bar">
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="height: 25%"></div>
+            </div>
+            <div class="person-img"></div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container>
+      <div class="individual-task-card">
+        <div class="header-card">
+          <!-- <h6 class="header-unassigned">Unassigned</h6> -->
+          <div class="user-profile-box">
+            <div class="user-image"></div>
+            <h6 class="user-name">Unassigned</h6>
+          </div>
+          <div style="display: flex">
+            <div>
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 52 52"
+                enable-background="new 0 0 52 52"
+                xml:space="preserve"
+              >
+                <path
+                  d="M30,29h16.5c0.8,0,1.5-0.7,1.5-1.5v-3c0-0.8-0.7-1.5-1.5-1.5H30c-0.6,0-1-0.4-1-1V5.5C29,4.7,28.3,4,27.5,4
+	h-3C23.7,4,23,4.7,23,5.5V22c0,0.6-0.4,1-1,1H5.5C4.7,23,4,23.7,4,24.5v3C4,28.3,4.7,29,5.5,29H22c0.6,0,1,0.4,1,1v16.5
+	c0,0.8,0.7,1.5,1.5,1.5h3c0.8,0,1.5-0.7,1.5-1.5V30C29,29.4,29.4,29,30,29z"
+                />
+              </svg>
+            </div>
+            <div style="margin-left: 5px">
+              <svg
+                width="15px"
+                height="15px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 330 330"
+                style="enable-background: new 0 0 330 330"
+                xml:space="preserve"
+              >
+                <g id="XMLID_169_">
+                  <path
+                    id="XMLID_197_"
+                    d="M304.394,139.394l-139.39,139.393L25.607,139.393c-5.857-5.857-15.355-5.858-21.213,0.001
+		c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393s7.794-1.581,10.606-4.394l149.996-150
+		c5.858-5.858,5.858-15.355,0-21.213C319.749,133.536,310.251,133.535,304.394,139.394z"
+                  />
+                  <path
+                    id="XMLID_221_"
+                    d="M154.398,190.607c2.813,2.813,6.628,4.393,10.606,4.393s7.794-1.581,10.606-4.394l149.996-150
+		c5.858-5.858,5.858-15.355,0-21.213c-5.857-5.858-15.355-5.858-21.213,0l-139.39,139.393L25.607,19.393
+		c-5.857-5.858-15.355-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213L154.398,190.607z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="status-count">
+          <div class="status-box">
+            <p class="count-status">12</p>
+            <p class="text-status">Not done</p>
+          </div>
+          <div class="status-box">
+            <p class="count-status">12</p>
+            <p class="text-status">Done</p>
+          </div>
+          <div class="circular-progress-bar"></div>
+          <!-- <div class="card">
+            <div class="box">
+              <div class="percent">
+                <svg>
+                  <circle r="70" cx="70" cy="70"></circle>
+                  <circle r="70" cx="70" cy="70"></circle>
+                </svg>
+                <div class="number">
+                    <div>50%</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="horizontal-progress-bar">
+          <div class="todo-bar-status"></div>
+          <div class="inprogress-bar-status" style="width: 70%"></div>
+          <div class="complete-bar-status" style="width: 50%"></div>
+        </div>
+        <div class="task-status">
+          <div class="task-status-row">
+            <div>
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 52 52"
+                enable-background="new 0 0 52 52"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M17.9,4.4l20.7,20.5c0.6,0.6,0.6,1.6,0,2.2L17.9,47.6c-0.6,0.6-1.6,0.6-2.2,0l-2.2-2.2
+      c-0.6-0.6-0.6-1.6,0-2.2l16.3-16.1c0.6-0.6,0.6-1.6,0-2.2L13.6,8.8c-0.6-0.6-0.6-1.6,0-2.2l2.2-2.2C16.4,3.9,17.3,3.9,17.9,4.4z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="status-color-todo"></div>
+            <p class="text-status-count">TO DO (12)</p>
+          </div>
+          <div class="task-status-row">
+            <div>
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 52 52"
+                enable-background="new 0 0 52 52"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M17.9,4.4l20.7,20.5c0.6,0.6,0.6,1.6,0,2.2L17.9,47.6c-0.6,0.6-1.6,0.6-2.2,0l-2.2-2.2
+      c-0.6-0.6-0.6-1.6,0-2.2l16.3-16.1c0.6-0.6,0.6-1.6,0-2.2L13.6,8.8c-0.6-0.6-0.6-1.6,0-2.2l2.2-2.2C16.4,3.9,17.3,3.9,17.9,4.4z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="status-color-inprogress"></div>
+            <p class="text-status-count">COMPLETE (12)</p>
+          </div>
+          <div class="task-status-row">
+            <div>
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 52 52"
+                enable-background="new 0 0 52 52"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M17.9,4.4l20.7,20.5c0.6,0.6,0.6,1.6,0,2.2L17.9,47.6c-0.6,0.6-1.6,0.6-2.2,0l-2.2-2.2
+      c-0.6-0.6-0.6-1.6,0-2.2l16.3-16.1c0.6-0.6,0.6-1.6,0-2.2L13.6,8.8c-0.6-0.6-0.6-1.6,0-2.2l2.2-2.2C16.4,3.9,17.3,3.9,17.9,4.4z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="status-color-complete"></div>
+            <p class="text-status-count">IN PROGRESS (12)</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
 </div>
